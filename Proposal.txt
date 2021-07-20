@@ -1,0 +1,29 @@
+Name of Student: Thomas Friedrichs
+
+Name of Project: Crossplay
+
+Project's Purpose or Goal: The goal is a finished website where users can select any number of gaming consoles and a list of games with crossplay capabilities for that set of consoles will show up. It is meant to be an easy place for gamers to go find games that they can play with their friends who may be on different consoles.
+
+List the absolute minimum features the project requires to meet this purpose or goal:
+
+A selection of consoles to sort with 
+A response list of games that match with the selected consoles
+A manually seeded database 
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+
+C#, entity framework
+React , webpack, npm
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+
+My two main stretch goals are backend related, one being the use of python instead of C#.
+The other goal is to use APIs from prominent game markets to seed my database with the goal of automating the process. perhaps even getting the API to update the database on a weekly basis 
+If the two goals above are completed I would like to go into more detail on my game list display, showing images, giving purchase links, and whatever other details the APIs may provide
+If all the above goals are completed then I'd like to legitimately deploy the website 
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+
+Python with potentially django(I'm going to need to do further research on the best framework for my needs)
+Steam API, Microsoft store API, Ideally more
+Azure, or another web service
+Is there anything else you'd like your instructor to know?
+
+If there are any concerns or issues with this proposal please let me know!

@@ -6,6 +6,7 @@ Friday 7/16/21
 * https://towardsdatascience.com/how-to-pull-data-from-an-api-using-python-requests-edcc8d6441b1
 * https://towardsdatascience.com/how-to-interact-with-apis-in-python-10efece03d2b
 
--- These are some of the resources I was reading/watching on friday, despite my interest in learning python i think for now
+--I spent this past Friday researching my backend stretch goals and weighing how realistic it was to getting this done, 
+ these are some of the resources I was reading/watching on friday, despite my interest in learning python i think for now
 the safer route for my capstone is to keep my backend as simple as possible(and in c#) and focus on front end stretch goals. 
 The plan moving forward is to just create a manually seeded database, im still unsure if its going to be SQL or noSQL 
