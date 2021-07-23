@@ -15,71 +15,89 @@ namespace CrossPlay.Models
         {
           builder.Entity<Game>()
           .HasData(
-            new Game {
+            new Game 
+            {
               GameId = 1,
               GameName = "Operation: Tango",
               Link = "http://www.operation-tango.com/",
-              
+            }
+          );
+
+          builder.Entity<Category>().HasData(
+            new Category
+            {
 
             }
           );
 
-          
-
           builder.Entity<Console>().HasData(
-            new Console {
+            new Console 
+            {
               ConsoleName = "Windows",
               ConsoleId = 1
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Playstation 2",
               ConsoleId = 2
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Xbox One",
               ConsoleId = 3
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Mac",
               ConsoleId = 4
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Playstation 2",
               ConsoleId = 5
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Switch",
               ConsoleId = 5
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Playstation Vita 6",
               ConsoleId = 6
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Playstation 3",
               ConsoleId = 7
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "iOS",
               ConsoleId = 8
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Android",
               ConsoleId = 9
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Xbox Series X/S",
               ConsoleId = 10
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Playstation 5",
               ConsoleId = 11
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Linux",
               ConsoleId = 12
             },
-            new Console {
+            new Console 
+            {
               ConsoleName = "Wii",
               ConsoleId = 13
             }
