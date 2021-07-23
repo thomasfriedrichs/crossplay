@@ -27,7 +27,20 @@ namespace CrossPlay.Models
 
           builder.Entity<Console>().HasData(
             new Console {
-              
+              Name = "Windows",
+              ConsoleId = 1
+            },
+            new Console {
+              Name = "Playstation 2",
+              ConsoleId = 2
+            },
+            new Console {
+              Name = "Xbox One",
+              ConsoleId = 3
+            },
+            new Console {
+              Name = "Mac",
+              ConsoleId = 4
             }
           );
         }
