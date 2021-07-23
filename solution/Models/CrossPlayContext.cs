@@ -18,7 +18,7 @@ namespace CrossPlay.Models
             new Game {
               
             }
-          )
+          );
         }
     }
 }
