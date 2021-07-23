@@ -26,7 +26,13 @@ namespace CrossPlay.Models
           builder.Entity<Category>().HasData(
             new Category
             {
-
+              CategoryId = 1,
+              CategoryName = "Action"
+            },
+            new Category
+            {
+              CategoryId = 2,
+              CategoryName = "RPG"
             }
           );
 
