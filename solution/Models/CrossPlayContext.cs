@@ -16,6 +16,17 @@ namespace CrossPlay.Models
           builder.Entity<Game>()
           .HasData(
             new Game {
+              GameId = 1,
+              Name = "Operation: Tango",
+              Category = "Strategy",
+              Link = "http://www.operation-tango.com/",
+              
+
+            }
+          );
+
+          builder.Entity<Console>().HasData(
+            new Console {
               
             }
           );
