@@ -10,5 +10,15 @@ namespace CrossPlay.Models
         }
 
         public DbSet<Game> Games { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+          builder.Entity<Game>()
+          .HasData(
+            new Game {
+              
+            }
+          )
+        }
     }
 }
