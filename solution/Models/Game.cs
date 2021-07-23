@@ -10,8 +10,7 @@ namespace CrossPlay.Models
       Consoles = new List<Console>();
     }
     public int GameId { get; set; }
-    public string Name { get; set; }
-    public string Category { get; set; }
+    public string GameName { get; set; }
     public string Link { get; set; }
     public List<Console> Consoles { get; set; }
 
