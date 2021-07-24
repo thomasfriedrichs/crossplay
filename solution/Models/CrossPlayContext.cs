@@ -57,16 +57,11 @@ namespace CrossPlay.Models
             new Category
             {
               CategoryId = 7,
-              CategoryName = "Action"
-            },
-            new Category
-            {
-              CategoryId = 8,
               CategoryName = "Card & Board Game"
             },
             new Category
             {
-              CategoryId = 9,
+              CategoryId = 8,
               CategoryName = "Racing"
             }
           );
@@ -79,7 +74,7 @@ namespace CrossPlay.Models
             },
             new Console 
             {
-              ConsoleName = "Playstation 2",
+              ConsoleName = "Playstation 4",
               ConsoleId = 2
             },
             new Console 
@@ -91,11 +86,6 @@ namespace CrossPlay.Models
             {
               ConsoleName = "Mac",
               ConsoleId = 4
-            },
-            new Console 
-            {
-              ConsoleName = "Playstation 2",
-              ConsoleId = 5
             },
             new Console 
             {
