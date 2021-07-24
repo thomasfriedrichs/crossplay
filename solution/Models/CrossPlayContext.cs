@@ -6,7 +6,7 @@ namespace CrossPlay.Models
     {
         public CrossPlayContext(DbContextOptions<CrossPlayContext> options)
             : base(options)
-        {
+        { 
         }
 
         public DbSet<Game> Games { get; set; }
@@ -33,6 +33,41 @@ namespace CrossPlay.Models
             {
               CategoryId = 2,
               CategoryName = "RPG"
+            },
+            new Category
+            {
+              CategoryId = 3,
+              CategoryName = "Indie"
+            },
+            new Category
+            {
+              CategoryId = 4,
+              CategoryName = "Strategy"
+            },
+            new Category
+            {
+              CategoryId = 5,
+              CategoryName = "Sports"
+            },
+            new Category
+            {
+              CategoryId = 6,
+              CategoryName = "Arcade"
+            },
+            new Category
+            {
+              CategoryId = 7,
+              CategoryName = "Action"
+            },
+            new Category
+            {
+              CategoryId = 8,
+              CategoryName = "Card & Board Game"
+            },
+            new Category
+            {
+              CategoryId = 9,
+              CategoryName = "Racing"
             }
           );
 
