@@ -68,6 +68,42 @@ namespace CrossPlay.Models
               GameId = 9,
               GameName = "Bleeding Edge",
               Link = "https://www.bleedingedge.com/",
+            },
+            new Game 
+            {
+              GameId = 10,
+              GameName = "Destiny 2",
+              Link = "https://www.destinythegame.com/",
+            },
+            new Game 
+            {
+              GameId = 11,
+              GameName = "Rust: Console Edition",
+              Link = "https://gamingbolt.com/rust-console-edition-7-things-you-need-to-know",
+            },
+            new Game 
+            {
+              GameId = 12,
+              GameName = "Human: Fall Flat",
+              Link = "http://www.nobrakesgames.com/human/",
+            },
+            new Game 
+            {
+              GameId = 13,
+              GameName = "Enlisted",
+              Link = "https://enlisted.net/",
+            },
+            new Game 
+            {
+              GameId = 14,
+              GameName = "Chivalry 2",
+              Link = "https://www.chivalry2.com/",
+            },
+            new Game 
+            {
+              GameId = 15,
+              GameName = "Predator: Hunting Grounds",
+              Link = "https://www.gamerevolution.com/guides/644342-predator-hunting-grounds-crossplay-invites",
             }
           );
 
