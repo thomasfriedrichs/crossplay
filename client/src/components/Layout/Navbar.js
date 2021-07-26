@@ -11,6 +11,17 @@ function Navbar() {
         <div>
           <li>
             <Link to={'/categories'}>
+              Categories 
+            </Link>
+          </li>
+          <li>
+            <Link to={'/games'}>
+              Games
+            </Link>
+          </li>
+          <li>
+            <Link to={'/platforms'}>
+              Platforms 
             </Link>
           </li>
         </div>
