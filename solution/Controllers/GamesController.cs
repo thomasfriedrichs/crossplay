@@ -50,13 +50,13 @@ namespace CrossPlay.Controllers
 
     // GET: api/Platforms
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatform(string category)
+    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatform(string platform)
     {
       var query = _db.Platforms.AsQueryable();
 
-      if (category != null)
+      if (platform != null)
       {
-        query = query.Where(entry => entry.PlatformName == category);
+        query = query.Where(entry => entry.PlatformName == platform);
       }
 
       return await query.ToListAsync();
