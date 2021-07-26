@@ -1,7 +1,7 @@
 import http from '../http-common';
 
 const getAllGames = () => {
-  return http.get('/games')
+  return http.get('api/games')
 }
 
 

@@ -21,6 +21,7 @@ namespace CrossPlay.Controllers
     }
 
     // GET: api/Games
+    [Route("api/games")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Game>>> GetAll(string name)
     {
@@ -35,6 +36,7 @@ namespace CrossPlay.Controllers
     }
 
     // GET: api/Categories
+    [Route("api/categories")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Category>>> GetCategory(string category)
     {
@@ -49,6 +51,7 @@ namespace CrossPlay.Controllers
     }
 
     // GET: api/Platforms
+    [Route("api/platforms")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Platform>>> GetPlatform(string platform)
     {
@@ -63,7 +66,7 @@ namespace CrossPlay.Controllers
     }
 
     // GET: api/Games/5
-    [HttpGet("{id}")]
+    [HttpGet("games/:{id}")]
     public async Task<ActionResult<Game>> GetGame(int id)
     {
         var game = await _db.Games.FindAsync(id);
