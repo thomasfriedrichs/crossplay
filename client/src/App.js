@@ -9,8 +9,8 @@ import Game from './pages/Game';
 import Platform from './pages/Platform';
 import Platforms from './pages/Platforms';
 // Components
-import Navbar from './components/nav/Navbar';
-import Footer from './components/Nav/Footer'; 
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer'; 
 
 function App() {
   return (
