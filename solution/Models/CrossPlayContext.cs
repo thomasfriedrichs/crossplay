@@ -32,6 +32,42 @@ namespace CrossPlay.Models
               GameId = 3,
               GameName = "Godfall",
               Link = "https://www.godfall.com/",
+            },
+            new Game 
+            {
+              GameId = 4,
+              GameName = "Blightbound",
+              Link = "https://store.steampowered.com/news/app/1263070/view/2971794942848931181",
+            },
+            new Game 
+            {
+              GameId = 5,
+              GameName = "Dungeons & Dragons: Dark Alliance",
+              Link = "https://www.darkalliance.com/",
+            },
+            new Game 
+            {
+              GameId = 6,
+              GameName = "Overwatch",
+              Link = "http://battle.net/overwatch/",
+            },
+            new Game 
+            {
+              GameId = 7,
+              GameName = "Trailmakers",
+              Link = "http://www.playtrailmakers.com/",
+            },
+            new Game 
+            {
+              GameId = 8,
+              GameName = "Football Manager 2021: Xbox Edition",
+              Link = "https://www.footballmanager.com/games/football-manager-2021-xbox",
+            },
+            new Game 
+            {
+              GameId = 9,
+              GameName = "Bleeding Edge",
+              Link = "https://www.bleedingedge.com/",
             }
           );
 
