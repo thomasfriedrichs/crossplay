@@ -22,18 +22,18 @@ namespace CrossPlay.Controllers
 
     // GET: api/Games
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Game>>> Get(string category, string name)
+    public async Task<ActionResult<IEnumerable<Game>>> Get(string name)
     {
       var query = _db.Games.AsQueryable();
 
-      if (category != null)
-      {
-        query = query.Where(entry => entry.Category == category);
-      }
+      // if (category != null)
+      // {
+      //   query = query.Where(entry => entry.Category == category);
+      // }
 
       if (name != null)
       {
-        query = query.Where(entry => entry.Name == name);
+        query = query.Where(entry => entry.GameName == name);
       }      
 
       return await query.ToListAsync();
