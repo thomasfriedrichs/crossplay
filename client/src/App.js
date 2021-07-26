@@ -4,8 +4,8 @@ import React from 'react';
 import Home from './pages/Home';
 import Categories from './pages/Categories';
 import Category from './pages/Category';
-import Game from './pages/Game';
 import Games from './pages/Games';
+import Game from './pages/Game';
 import Platform from './pages/Platform';
 import Platforms from './pages/Platforms';
 // Components
@@ -18,8 +18,26 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          <Route>
-            
+          <Route path='/'>
+            <Home/>
+          </Route>
+          <Route path='/categories'>
+            <Categories/>
+          </Route>
+          <Route path='/categories/:category'>
+            <Category/>
+          </Route>
+          <Route path='/games'>
+            <Games/>
+          </Route>
+          <Route path='/games/:game'>
+            <Game/>
+          </Route>
+          <Route path='/platforms'>
+            <Platforms/>
+          </Route>
+          <Route path='/platforms/:platform'>
+            <Platform/>
           </Route>
         </Switch>
         <Footer/>
