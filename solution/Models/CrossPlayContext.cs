@@ -10,7 +10,10 @@ namespace CrossPlay.Models
         }
 
         public DbSet<Game> Games { get; set; }
-
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Platform> Platforms { get; set; }
+        public DbSet<GameCategory> GameCategories { get; set; }
+        public DbSet<GamePlatform> GamePlatforms { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
           builder.Entity<Game>()
@@ -150,71 +153,71 @@ namespace CrossPlay.Models
             }
           );
 
-          builder.Entity<Console>().HasData(
-            new Console 
+          builder.Entity<Platform>().HasData(
+            new Platform 
             {
-              ConsoleName = "Windows",
-              ConsoleId = 1
+              PlatformName = "Windows",
+              PlatformId = 1
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Playstation 4",
-              ConsoleId = 2
+              PlatformName = "Playstation 4",
+              PlatformId = 2
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Xbox One",
-              ConsoleId = 3
+              PlatformName = "Xbox One",
+              PlatformId = 3
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Mac",
-              ConsoleId = 4
+              PlatformName = "Mac",
+              PlatformId = 4
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Switch",
-              ConsoleId = 5
+              PlatformName = "Switch",
+              PlatformId = 5
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Playstation Vita 6",
-              ConsoleId = 6
+              PlatformName = "Playstation Vita 6",
+              PlatformId = 6
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Playstation 3",
-              ConsoleId = 7
+              PlatformName = "Playstation 3",
+              PlatformId = 7
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "iOS",
-              ConsoleId = 8
+              PlatformName = "iOS",
+              PlatformId = 8
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Android",
-              ConsoleId = 9
+              PlatformName = "Android",
+              PlatformId = 9
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Xbox Series X/S",
-              ConsoleId = 10
+              PlatformName = "Xbox Series X/S",
+              PlatformId = 10
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Playstation 5",
-              ConsoleId = 11
+              PlatformName = "Playstation 5",
+              PlatformId = 11
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Linux",
-              ConsoleId = 12
+              PlatformName = "Linux",
+              PlatformId = 12
             },
-            new Console 
+            new Platform 
             {
-              ConsoleName = "Wii",
-              ConsoleId = 13
+              PlatformName = "Wii",
+              PlatformId = 13
             }
           );
 
@@ -311,318 +314,318 @@ namespace CrossPlay.Models
             }          
           );
 
-          builder.Entity<GameConsole>().HasData(
-            new GameConsole
+          builder.Entity<GamePlatform>().HasData(
+            new GamePlatform
             {
-              GameConsoleId = 1,
+              GamePlatformId = 1,
               GameId = 1,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 2,
+              GamePlatformId = 2,
               GameId = 1,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 3,
+              GamePlatformId = 3,
               GameId = 1,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 4,
+              GamePlatformId = 4,
               GameId = 1,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 5,
+              GamePlatformId = 5,
               GameId = 1,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 6,
+              GamePlatformId = 6,
               GameId = 2,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 7,
+              GamePlatformId = 7,
               GameId = 2,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 8,
+              GamePlatformId = 8,
               GameId = 2,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 9,
+              GamePlatformId = 9,
               GameId = 3,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 10,
+              GamePlatformId = 10,
               GameId = 3,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 11,
+              GamePlatformId = 11,
               GameId = 4,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 12,
+              GamePlatformId = 12,
               GameId = 4,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 13,
+              GamePlatformId = 13,
               GameId = 4,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 14,
+              GamePlatformId = 14,
               GameId = 5,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 15,
+              GamePlatformId = 15,
               GameId = 5,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 16,
+              GamePlatformId = 16,
               GameId = 5,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 17,
+              GamePlatformId = 17,
               GameId = 6,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 18,
+              GamePlatformId = 18,
               GameId = 6,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 19,
+              GamePlatformId = 19,
               GameId = 6,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 20,
+              GamePlatformId = 20,
               GameId = 6,
-              ConsoleId = 5
+              PlatformId = 5
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 21,
+              GamePlatformId = 21,
               GameId = 6,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 22,
+              GamePlatformId = 22,
               GameId = 6,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 23,
+              GamePlatformId = 23,
               GameId = 7,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 24,
+              GamePlatformId = 24,
               GameId = 7,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 25,
+              GamePlatformId = 25,
               GameId = 7,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 26,
+              GamePlatformId = 26,
               GameId = 8,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 27,
+              GamePlatformId = 27,
               GameId = 8,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 28,
+              GamePlatformId = 28,
               GameId = 8,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 29,
+              GamePlatformId = 29,
               GameId = 9,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 30,
+              GamePlatformId = 30,
               GameId = 9,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 31,
+              GamePlatformId = 31,
               GameId = 10,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 32,
+              GamePlatformId = 32,
               GameId = 10,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 33,
+              GamePlatformId = 33,
               GameId = 10,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 34,
+              GamePlatformId = 34,
               GameId = 10,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 35,
+              GamePlatformId = 35,
               GameId = 10,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 36,
+              GamePlatformId = 36,
               GameId = 11,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 37,
+              GamePlatformId = 37,
               GameId = 11,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 38,
+              GamePlatformId = 38,
               GameId = 11,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 39,
+              GamePlatformId = 39,
               GameId = 11,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 40,
+              GamePlatformId = 40,
               GameId = 12,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 41,
+              GamePlatformId = 41,
               GameId = 12,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 42,
+              GamePlatformId = 42,
               GameId = 12,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 43,
+              GamePlatformId = 43,
               GameId = 13,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 44,
+              GamePlatformId = 44,
               GameId = 13,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 45,
+              GamePlatformId = 45,
               GameId = 13,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 46,
+              GamePlatformId = 46,
               GameId = 14,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 47,
+              GamePlatformId = 47,
               GameId = 14,
-              ConsoleId = 2
+              PlatformId = 2
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 48,
+              GamePlatformId = 48,
               GameId = 14,
-              ConsoleId = 11
+              PlatformId = 11
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 49,
+              GamePlatformId = 49,
               GameId = 14,
-              ConsoleId = 3
+              PlatformId = 3
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 50,
+              GamePlatformId = 50,
               GameId = 14,
-              ConsoleId = 10
+              PlatformId = 10
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 51,
+              GamePlatformId = 51,
               GameId = 15,
-              ConsoleId = 1
+              PlatformId = 1
             },
-            new GameConsole
+            new GamePlatform
             {
-              GameConsoleId = 52,
+              GamePlatformId = 52,
               GameId = 15,
-              ConsoleId = 2
+              PlatformId = 2
             }
           );
         }

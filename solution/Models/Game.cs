@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace CrossPlay.Models
 {
   public class Game
