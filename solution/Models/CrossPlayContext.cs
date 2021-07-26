@@ -26,6 +26,12 @@ namespace CrossPlay.Models
               GameId = 2,
               GameName = "Hunter's Arena: Legends",
               Link = "https://store.steampowered.com/news/app/1061100/view/2997690640726279509",
+            },
+            new Game 
+            {
+              GameId = 3,
+              GameName = "Godfall",
+              Link = "https://www.godfall.com/",
             }
           );
 
