@@ -21,7 +21,7 @@ namespace CrossPlay.Controllers
     }
   
     // GET: api/games
-    [Route("/games")]
+    //[Route("/games")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Game>>> GetGames()
     {
@@ -29,11 +29,11 @@ namespace CrossPlay.Controllers
     }
 
     // GET: api/platforms
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
-    {
-      return await _db.Platforms.ToListAsync();
-    }
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
+    // {
+    //   return await _db.Platforms.ToListAsync();
+    // }
 
     //[Route("/allgames")]
     // [HttpGet]
