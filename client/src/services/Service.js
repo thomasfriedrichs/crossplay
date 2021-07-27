@@ -1,33 +1,41 @@
 import http from '../http-common';
-class DataService {
-  getAllGames = () => {
+
+  const getAllGames = () => {
     return http.get('api/crossplay/games');
   };
 
-  getGame = id => {
+  const getGame = id => {
     return http.get(`api/crossplay/games/${id}`);
   };
 
-  getAllPlatforms = () => {
+  const getAllPlatforms = () => {
     return http.get('api/crossplay/platforms');
   };
 
-  getPlatform = id => {
+  const getPlatform = id => {
     return http.get(`api/crossplay/platforms/${id}`);
   };
 
-  getAllCategories = () => {
+  const getAllCategories = () => {
     return http.get('api/crossplay/categories');
   };
 
-  getCategory = id => {
+  const getCategory = id => {
     return http.get(`api/crossplay/categories/${id}`);
   };
 
-  findByTitle = title => {
+  const findByTitle = title => {
     return http.get(`/crossplay/games?GameName=${title}`);
   };
+
+
+
+export {
+  getAllGames,
+  getGame,
+  getAllPlatforms,
+  getPlatform,
+  getAllCategories,
+  getCategory,
+  findByTitle
 }
-
-
-export default DataService; 
