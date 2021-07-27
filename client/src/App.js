@@ -12,7 +12,7 @@ import Platforms from './pages/Platforms';
 import Navbar from './components/Layout/Navbar';
 import Footer from './components/Layout/Footer'; 
 
-function App() {
+const App = () => {
   return (
     <div className = 'app'>
       <Router>
