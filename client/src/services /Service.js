@@ -29,7 +29,7 @@ const findByTitle = title => {
 };
 
 
-export default {
+export {
   getAllGames,
   getGame,
   getAllPlatforms,
