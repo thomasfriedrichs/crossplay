@@ -5,7 +5,7 @@ const getAllGames = () => {
 };
 
 const getGame = id => {
-  return http.get(`/games/${id}`);
+  return http.get(`api/games/${id}`);
 };
 
 

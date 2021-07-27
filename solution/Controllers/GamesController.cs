@@ -20,7 +20,7 @@ namespace CrossPlay.Controllers
       _db = db;
     }
 
-    // GET: api/Games
+    // GET: api/games
     [Route("/allgames")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Game>>> GetGames(string name)
@@ -35,7 +35,7 @@ namespace CrossPlay.Controllers
       return await query.ToListAsync();
     }
 
-    // GET: api/Games/5
+    // GET: api/games/5
     [HttpGet("{id}")]
     public async Task<ActionResult<Game>> GetGame(int id)
     {
@@ -49,7 +49,7 @@ namespace CrossPlay.Controllers
         return game;
     }
 
-    // GET: api/Categories
+    // GET: api/categories
     [Route("/categories")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Category>>> GetCategories(string category)
