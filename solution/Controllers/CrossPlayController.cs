@@ -9,28 +9,41 @@ using CrossPlay.Models;
 
 namespace CrossPlay.Controllers
 {
-  [Route("api/crossplay")]
+  [Route("api/games")]
   [ApiController]
-  public class CrossPlayController : ControllerBase
+  public class GamesController : ControllerBase
   {
     private readonly CrossPlayContext _db;
 
-    public CrossPlayController(CrossPlayContext db)
+    public GamesController(CrossPlayContext db)
     {
       _db = db;
     }
   
     // GET: api/games
-    //[Route("/games")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Game>>> GetGames()
     {
       return await _db.Games.ToListAsync();
     } 
 
+    // GET: api/games/1
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Game>> GetGame(int id)
+    {
+        var game = await _db.Games.FindAsync(id);
+
+        if (game == null)
+        {
+            return NotFound();
+        }
+
+        return game;
+    }
+    
     //GET: api/platforms
     [HttpGet]
-    [Route("/platforms")]
+    // [Route("/platforms")]
     public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
     {
       return await _db.Platforms.ToListAsync();
@@ -50,19 +63,6 @@ namespace CrossPlay.Controllers
     //   return await query.ToListAsync();
     // }
 
-    // // GET: api/games/5
-    // [HttpGet("{id}")]
-    // public async Task<ActionResult<Game>> GetGame(int id)
-    // {
-    //     var game = await _db.Games.FindAsync(id);
-
-    //     if (game == null)
-    //     {
-    //         return NotFound();
-    //     }
-
-    //     return game;
-    // }
 
     // // GET: api/categories
     // [Route("/categories")]
