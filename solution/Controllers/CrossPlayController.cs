@@ -28,12 +28,13 @@ namespace CrossPlay.Controllers
       return await _db.Games.ToListAsync();
     } 
 
-    // GET: api/platforms
-    // [HttpGet]
-    // public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
-    // {
-    //   return await _db.Platforms.ToListAsync();
-    // }
+    //GET: api/platforms
+    [HttpGet]
+    [Route("/platforms")]
+    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
+    {
+      return await _db.Platforms.ToListAsync();
+    }
 
     //[Route("/allgames")]
     // [HttpGet]
