@@ -14,10 +14,30 @@ namespace CrossPlay.Controllers
   public class PlatformsController : ControllerBase
   {
     private readonly CrossPlayContext _db;
-
     public PlatformsController(CrossPlayContext db)
     {
       _db = db;
+    }
+
+    //Get: api/crossplay/platforms
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
+    {
+      return await _db.Platforms.ToListAsync();
+    } 
+
+    //Get: api/crossplay/platforms/1
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Platform>> GetPlatform(int id)
+    {
+        var platform = await _db.Platforms.FindAsync(id);
+
+        if (platform == null)
+        {
+            return NotFound();
+        }
+
+        return platform;
     }
   }
 }
