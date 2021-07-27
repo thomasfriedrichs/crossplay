@@ -9,13 +9,13 @@ using CrossPlay.Models;
 
 namespace CrossPlay.Controllers
 {
-  [Route("api/games")]
+  [Route("api/crossplay")]
   [ApiController]
-  public class GamesController : ControllerBase
+  public class CrossPlayController : ControllerBase
   {
     private readonly CrossPlayContext _db;
 
-    public GamesController(CrossPlayContext db)
+    public CrossPlayController(CrossPlayContext db)
     {
       _db = db;
     }
