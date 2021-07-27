@@ -24,6 +24,10 @@ const getCategory = id => {
   return http.get(`api/crossplay/categories/${id}`);
 };
 
+const findByTitle = title => {
+  return http.get(`/crossplay/games?GameName=${title}`);
+};
+
 
 export default {
   getAllGames,
@@ -31,5 +35,6 @@ export default {
   getAllPlatforms,
   getPlatform,
   getAllCategories,
-  getCategory
+  getCategory,
+  findByTitle
 };
