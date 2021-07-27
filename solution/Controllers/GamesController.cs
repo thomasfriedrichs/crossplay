@@ -19,7 +19,7 @@ namespace CrossPlay.Controllers
     {
       _db = db;
     }
-
+  
     // GET: api/games
     [Route("/allgames")]
     [HttpGet]
