@@ -78,7 +78,7 @@ namespace CrossPlay.Controllers
 
         return category;
     }
-
+  
     // GET: api/Platforms
     [Route("api/platforms")]
     [HttpGet]
