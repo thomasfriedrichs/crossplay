@@ -9,7 +9,7 @@ using CrossPlay.Models;
 
 namespace CrossPlay.Controllers
 {
-  [Route("api/games")]
+  [Route("api/crossplay/games")]
   [ApiController]
   public class GamesController : ControllerBase
   {
@@ -20,14 +20,14 @@ namespace CrossPlay.Controllers
       _db = db;
     }
   
-    // GET: api/games
+    // GET: api/crossplay/games
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Game>>> GetGames()
     {
       return await _db.Games.ToListAsync();
     } 
 
-    // GET: api/games/1
+    // GET: api/crossplay/games/1
     [HttpGet("{id}")]
     public async Task<ActionResult<Game>> GetGame(int id)
     {
@@ -42,12 +42,12 @@ namespace CrossPlay.Controllers
     }
     
     //GET: api/platforms
-    [HttpGet]
-    // [Route("/platforms")]
-    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
-    {
-      return await _db.Platforms.ToListAsync();
-    }
+    // [HttpGet]
+    // // [Route("/platforms")]
+    // public async Task<ActionResult<IEnumerable<Platform>>> GetPlatforms()
+    // {
+    //   return await _db.Platforms.ToListAsync();
+    // }
 
     //[Route("/allgames")]
     // [HttpGet]
