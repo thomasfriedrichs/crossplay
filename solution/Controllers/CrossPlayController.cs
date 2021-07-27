@@ -35,63 +35,63 @@ namespace CrossPlay.Controllers
       return await query.ToListAsync();
     }
 
-    // GET: api/games/5
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Game>> GetGame(int id)
-    {
-        var game = await _db.Games.FindAsync(id);
+    // // GET: api/games/5
+    // [HttpGet("{id}")]
+    // public async Task<ActionResult<Game>> GetGame(int id)
+    // {
+    //     var game = await _db.Games.FindAsync(id);
 
-        if (game == null)
-        {
-            return NotFound();
-        }
+    //     if (game == null)
+    //     {
+    //         return NotFound();
+    //     }
 
-        return game;
-    }
+    //     return game;
+    // }
 
-    // GET: api/categories
-    [Route("/categories")]
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Category>>> GetCategories(string category)
-    {
-      var query = _db.Categories.AsQueryable();
+    // // GET: api/categories
+    // [Route("/categories")]
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Category>>> GetCategories(string category)
+    // {
+    //   var query = _db.Categories.AsQueryable();
 
-      if (category != null)
-      {
-        query = query.Where(entry => entry.CategoryName == category);
-      }
+    //   if (category != null)
+    //   {
+    //     query = query.Where(entry => entry.CategoryName == category);
+    //   }
 
-      return await query.ToListAsync();
-    }
+    //   return await query.ToListAsync();
+    // }
 
-    // GET: api/categories/5
-    [Route("/categories")]
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Category>> GetCategory(int id)
-    {
-        var category = await _db.Categories.FindAsync(id);
+    // // GET: api/categories/5
+    // [Route("/categories")]
+    // [HttpGet("{id}")]
+    // public async Task<ActionResult<Category>> GetCategory(int id)
+    // {
+    //     var category = await _db.Categories.FindAsync(id);
 
-        if (category == null)
-        {
-            return NotFound();
-        }
+    //     if (category == null)
+    //     {
+    //         return NotFound();
+    //     }
 
-        return category;
-    }
+    //     return category;
+    // }
   
-    // GET: api/Platforms
-    [Route("api/platforms")]
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Platform>>> GetPlatform(string platform)
-    {
-      var query = _db.Platforms.AsQueryable();
+    // // GET: api/Platforms
+    // [Route("api/platforms")]
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Platform>>> GetPlatform(string platform)
+    // {
+    //   var query = _db.Platforms.AsQueryable();
 
-      if (platform != null)
-      {
-        query = query.Where(entry => entry.PlatformName == platform);
-      }
+    //   if (platform != null)
+    //   {
+    //     query = query.Where(entry => entry.PlatformName == platform);
+    //   }
 
-      return await query.ToListAsync();
-    }
+    //   return await query.ToListAsync();
+    // }
   }
 }
