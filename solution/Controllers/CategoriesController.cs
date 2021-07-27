@@ -19,14 +19,14 @@ namespace CrossPlay.Controllers
       _db = db;
     }
 
-    //Get: api/crossplay/categorys
+    //Get: api/crossplay/categoriess
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
     {
       return await _db.Categories.ToListAsync();
     } 
 
-    //Get: api/crossplay/categorys/1
+    //Get: api/crossplay/categories/1
     [HttpGet("{id}")]
     public async Task<ActionResult<Category>> GetCategory(int id)
     {
