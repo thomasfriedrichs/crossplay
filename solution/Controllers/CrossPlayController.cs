@@ -26,7 +26,7 @@ namespace CrossPlay.Controllers
     public async Task<ActionResult<IEnumerable<Game>>> GetGames()
     {
       return await _db.Games.ToListAsync();
-    }
+    } 
 
     // GET: api/platforms
     // [HttpGet]
