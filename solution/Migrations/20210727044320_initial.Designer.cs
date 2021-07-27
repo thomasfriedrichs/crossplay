@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CrossPlay.Migrations
 {
     [DbContext(typeof(CrossPlayContext))]
-    [Migration("20210726175735_Initial")]
-    partial class Initial
+    [Migration("20210727044320_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
