@@ -14,8 +14,8 @@ import Footer from './components/Layout/Footer';
 
 const App = () => {
   return (
-    <div className = 'app'>
-      <Router>
+    <Router>
+        <div className = 'app'>
         <Navbar/>
         <Switch>
           <Route path='/'>
@@ -41,8 +41,8 @@ const App = () => {
           </Route>
         </Switch>
         <Footer/>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

@@ -1,3 +1,5 @@
+import axios from "axios";
+
 // import http from '../http-common';
 
 //   const getAllGames = () => {
@@ -28,9 +30,14 @@
 //     return http.get(`/crossplay/games?GameName=${title}`);
 //   };
 
-const baseUrl = "http://localhost:5001/api/crossplay";
+// const baseUrl = "http://localhost:5000/api/crossplay";
 
-export default baseUrl;
+
+const client = axios.create({
+  baseURL: "http://localhost:5000/api/crossplay" 
+});
+
+export default client;
 
 // export {
 //   getAllGames,
