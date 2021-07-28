@@ -28,7 +28,7 @@
 //     return http.get(`/crossplay/games?GameName=${title}`);
 //   };
 
-const baseUrl = "http://localhost:5000/api/crossplay";
+const baseUrl = "http://localhost:5001/api/crossplay";
 
 export default baseUrl;
 

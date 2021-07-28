@@ -6,14 +6,17 @@ import axios from 'axios';
 
 const Games = () => {
   const [post, setPost] = React.useState(null);
-  //const [error, setError] = React.useState(null);
+  const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     axios.get(`${baseUrl}/games`).then((response) => {
       setPost(response.data);
+    }).catch(error => {
+      setError(error);
     });
   }, []);
 
+  if (error) return `Error: ${error.message}`;
   if (!post) return null;
 
   return (
