@@ -1,4 +1,5 @@
 import React from "react";
+import SingleGame from "../components/Games/SingleGame";
 // import { Link } from "react-router-dom";
 import client from '../services/Service';
 // import axios from 'axios';
@@ -38,6 +39,7 @@ const Games = () => {
       <h1>{post[0].gameName}</h1>
       <h1>hello world</h1>
       <p>hhhhhhhhhhhhhhhhhhh</p>
+      <SingleGame/>
     </div>
   )
 };
