@@ -1,41 +1,43 @@
-import http from '../http-common';
+// import http from '../http-common';
 
-  const getAllGames = () => {
-    return http.get('api/crossplay/games');
-  };
+//   const getAllGames = () => {
+//     return http.get('api/crossplay/games');
+//   };
 
-  const getGame = id => {
-    return http.get(`api/crossplay/games/${id}`);
-  };
+//   const getGame = id => {
+//     return http.get(`api/crossplay/games/${id}`);
+//   };
 
-  const getAllPlatforms = () => {
-    return http.get('api/crossplay/platforms');
-  };
+//   const getAllPlatforms = () => {
+//     return http.get('api/crossplay/platforms');
+//   };
 
-  const getPlatform = id => {
-    return http.get(`api/crossplay/platforms/${id}`);
-  };
+//   const getPlatform = id => {
+//     return http.get(`api/crossplay/platforms/${id}`);
+//   };
 
-  const getAllCategories = () => {
-    return http.get('api/crossplay/categories');
-  };
+//   const getAllCategories = () => {
+//     return http.get('api/crossplay/categories');
+//   };
 
-  const getCategory = id => {
-    return http.get(`api/crossplay/categories/${id}`);
-  };
+//   const getCategory = id => {
+//     return http.get(`api/crossplay/categories/${id}`);
+//   };
 
-  const findByTitle = title => {
-    return http.get(`/crossplay/games?GameName=${title}`);
-  };
+//   const findByTitle = title => {
+//     return http.get(`/crossplay/games?GameName=${title}`);
+//   };
 
+const baseUrl = "http://localhost:5000/api/crossplay";
 
+export default baseUrl;
 
-export {
-  getAllGames,
-  getGame,
-  getAllPlatforms,
-  getPlatform,
-  getAllCategories,
-  getCategory,
-  findByTitle
-}
+// export {
+//   getAllGames,
+//   getGame,
+//   getAllPlatforms,
+//   getPlatform,
+//   getAllCategories,
+//   getCategory,
+//   findByTitle
+// }
