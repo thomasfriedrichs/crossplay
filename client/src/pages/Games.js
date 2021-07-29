@@ -24,7 +24,7 @@ const Games = () => {
   return (
     <div>
       <p></p>
-      <SingleGame/>
+      <SingleGame games={post}/>
     </div>
   )
 };
