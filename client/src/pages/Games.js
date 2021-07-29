@@ -35,10 +35,7 @@ const Games = () => {
 
   return (
     <div>
-      {console.log(post)}
-      {/* <h1>{post[0].gameName}</h1> */}
-      <h1>hello world</h1>
-      <p>hhhhhhhhhhhhhhhhhhh</p>
+      <p></p>
       <SingleGame/>
     </div>
   )
