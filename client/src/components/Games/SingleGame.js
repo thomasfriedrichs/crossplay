@@ -15,7 +15,7 @@ const SingleGame = () => {
 
   return (
     <div>
-
+      
     </div>
   )
 }

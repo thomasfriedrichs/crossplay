@@ -5,18 +5,26 @@ const Navbar = () => {
   return (
     <div>
       <nav className='nav'>
-        <NavLink to='/'>
-          CrossPlay
-        </NavLink>
-        <NavLink to={'/categories'}>
-          Categories 
-        </NavLink>
-        <NavLink to={'/games'}>
-          Games
-        </NavLink>
-        <NavLink to={'/platforms'}>
-          Platforms 
-        </NavLink>
+        <div>
+          <NavLink to='/'>
+            CrossPlay
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to={'/categories'}>
+            Categories 
+          </NavLink>
+        <div>
+        </div>
+          <NavLink to={'/games'}>
+            Games
+          </NavLink>
+        <div>
+        </div>
+          <NavLink to={'/platforms'}>
+            Platforms 
+          </NavLink>
+        </div>
       </nav>
     </div>
   )
