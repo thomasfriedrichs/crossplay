@@ -6,11 +6,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CrossPlay.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace CrossPlay.Controllers
 {
   [Route("api/crossplay/platforms")]
   [ApiController]
+  [EnableCors("http://localhost:3000")]  
+
   public class PlatformsController : ControllerBase
   {
     private readonly CrossPlayContext _db;
