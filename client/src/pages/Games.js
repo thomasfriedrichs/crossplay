@@ -7,7 +7,7 @@ import client from '../services/Service';
 
 const Games = () => {
   const [post, setPost] = React.useState(null);
-  const [error, setError] = React.useState(null);
+  // const [error, setError] = React.useState(null);
 
   // React.useEffect(() => {
   //   axios.get(`${baseUrl}/games`).then((response) => {
@@ -30,13 +30,13 @@ const Games = () => {
   }, []);
 
 
-  if (error) return `Error: ${error.message}`;
-  if (!post) return null;
+  // if (error) return `Error: ${error.message}`;
+  // if (!post) return null;
 
   return (
     <div>
       {console.log(post)}
-      <h1>{post[0].gameName}</h1>
+      {/* <h1>{post[0].gameName}</h1> */}
       <h1>hello world</h1>
       <p>hhhhhhhhhhhhhhhhhhh</p>
       <SingleGame/>

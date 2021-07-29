@@ -14,35 +14,21 @@ import Footer from './components/Layout/Footer';
 
 const App = () => {
   return (
-    <Router>
-        <div className = 'app'>
+    <div className="app">
+      <Router>
         <Navbar/>
         <Switch>
-          <Route path='/'>
-            <Home/>
-          </Route>
-          <Route path='/categories'>
-            <Categories/>
-          </Route>
-          <Route path='/categories/:category'>
-            <Category/>
-          </Route>
-          <Route path='/games'>
-            <Games/>
-          </Route>
-          <Route path='/games/:game'>
-            <Game/>
-          </Route>
-          <Route path='/platforms'>
-            <Platforms/>
-          </Route>
-          <Route path='/platforms/:platform'>
-            <Platform/>
-          </Route>
+          <Route exact path="/" component={Home}/>
+          <Route path="/categories" component={Categories}/>
+          <Route path="/categories/:category" component={Category}/>
+          <Route path="/games" component={Games}/>  
+          <Route path="/games/:game" component={Game}/>
+          <Route path="/platforms" component={Platforms}/>
+          <Route path="/platforms/:platform" component={Platform}/>
         </Switch>
-        <Footer/>
-      </div>
-    </Router>
+      </Router>
+      <Footer />
+    </div>
   );
 }
 

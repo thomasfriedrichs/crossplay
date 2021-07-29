@@ -1,30 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 const Navbar = () => {
   return (
     <div>
       <nav className='nav'>
-        <a href='/'>
+        <NavLink to='/'>
           CrossPlay
-        </a>
-        <div>
-          <li>
-            <Link to={'/categories'}>
-              Categories 
-            </Link>
-          </li>
-          <li>
-            <Link to={'/games'}>
-              Games
-            </Link>
-          </li>
-          <li>
-            <Link to={'/platforms'}>
-              Platforms 
-            </Link>
-          </li>
-        </div>
+        </NavLink>
+        <NavLink to={'/categories'}>
+          Categories 
+        </NavLink>
+        <NavLink to={'/games'}>
+          Games
+        </NavLink>
+        <NavLink to={'/platforms'}>
+          Platforms 
+        </NavLink>
       </nav>
     </div>
   )
