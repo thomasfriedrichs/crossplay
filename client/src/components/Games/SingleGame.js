@@ -16,6 +16,7 @@ const SingleGame = (props) => {
   return (
     <div>
       {console.log(props)}
+      
     </div>
   )
 }

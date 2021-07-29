@@ -17,14 +17,14 @@ const Games = () => {
     getPost();
   }, []);
 
-
+  const Games = post;
   // if (error) return `Error: ${error.message}`;
   // if (!post) return null;
 
   return (
     <div>
       <p></p>
-      <SingleGame games={post}/>
+      {Games.map(game => <SingleGame key={game.id}/>)}
     </div>
   )
 };
