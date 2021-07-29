@@ -9,18 +9,6 @@ const Games = () => {
   const [post, setPost] = React.useState(null);
   // const [error, setError] = React.useState(null);
 
-  // React.useEffect(() => {
-  //   axios.get(`${baseUrl}/games`).then((response) => {
-  //     setPost(response.data);
-  //   }).catch(error => {
-  //     setError(error);
-  //   });
-  // }, []);
-
-  // const client = axios.create({
-  //   baseURL: "https://jsonplaceholder.typicode.com/posts" 
-  // });
-
   React.useEffect(() => {
     async function getPost() {
       const response = await client.get("/games");
